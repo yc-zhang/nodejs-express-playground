@@ -1,0 +1,17 @@
+version: '2'
+
+services:
+  _base:
+    image: google/nodejs:0.10.33
+    volumes:
+      - .:/app
+    working_dir: /app
+    environment:
+      PORT: 8000
+
+  api:
+    extends:
+      service: _base
+    command: npm start
+    ports:
+      - "8000:8000"
