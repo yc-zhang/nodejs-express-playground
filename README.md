@@ -8,6 +8,7 @@ The following points should be checked during this spike, to make sure everythin
 - [ ] Route binding.
 - [ ] ORM integration.
 - [ ] Middleware binding.
-- [ ] Authentication & Log & Throughput Limitation.
+- [ ] API doc generator.
+- [ ] Authentication & Log & Throughput Limitation & Validation.
 - [ ] Consider the Ngnix as reverse proxy
 - [ ] Unit test.
