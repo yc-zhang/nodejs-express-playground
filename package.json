@@ -6,7 +6,8 @@
     "body-parser": "~1.0.1",
     "express": "~4.0.0",
     "mongoose": "~3.6.13",
-    "pm2": "^2.4.0"
+    "pm2": "^2.4.0",
+    "require-all": "~2.1.0"
   },
   "scripts": {
     "build-image": "sh ./ci/build-image.sh",

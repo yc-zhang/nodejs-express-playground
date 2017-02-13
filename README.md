@@ -17,7 +17,7 @@ We'll introduce the other tasks like **test**, **pre-push check** later.
 ### TODO
 
 - [x] Dockerised
-- [ ] Route binding.
+- [x] Route binding.
 - [ ] Unit test.
 - [ ] ORM integration.
 - [ ] Middleware binding.
