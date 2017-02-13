@@ -8,9 +8,9 @@ The following points should be checked during this spike, to make sure everythin
 
 The app will be released as a docker image, which has a Dockerfile to describe the components.  Also a docker-compose file will be used in local-testing, pre-push verification in future.  We have the following commands to invoke each task.
 
-`npm run build-image`: build the image with version, this should be invoked in CI server, which could build an image with build number for us.
-`npm run publish-image`: release the image, we do not here because we don't release it anymore.
-`npm run local-run`: run the compose images locally, for testing or something else.
+- `npm run build-image`: build the image with version, this should be invoked in CI server, which could build an image with build number for us.
+- `npm run publish-image`: release the image, we do not here because we don't release it anymore.
+- `npm run local-run`: run the compose images locally, for testing or something else.
 
 We'll introduce the other tasks like **test**, **pre-push check** later.
 
