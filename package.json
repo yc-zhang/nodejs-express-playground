@@ -7,5 +7,10 @@
     "express": "~4.0.0",
     "mongoose": "~3.6.13",
     "pm2": "^2.4.0"
+  },
+  "scripts": {
+    "build-image": "sh ./ci/build-image.sh",
+    "publish-image": "sh ./ci/publish-image.sh",
+    "local-run": "docker-compose up -d"
   }
 }
