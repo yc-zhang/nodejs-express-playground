@@ -1,19 +1,17 @@
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
+let express = require('express');
+let app = express();
+let bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-var port = process.env.PORT || 8000;
+let port = process.env.PORT || 8000;
 
-var apiVersion = process.env.API_VERSION || 'v1';
+let apiVersion = process.env.API_VERSION || 'v1';
 
-var controllers = require('require-all')(__dirname + '/controller');
+let controllers = require('require-all')(__dirname + '/controller');
 
-Object.keys(controllers)
-    .map(key => controllers[key])
-    .forEach(route => app.use('/' + apiVersion, route));
+Object.keys(controllers).map(key => controllers[key]).forEach(route => app.use('/' + apiVersion, route));
 
 app.listen(port);
 

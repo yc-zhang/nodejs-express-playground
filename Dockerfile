@@ -5,7 +5,7 @@ MAINTAINER yc-zhang <turalyon.zhangyc@gmail.com>
 RUN mkdir /api
 WORKDIR /api
 ADD package.json /api/package.json
-RUN npm install
+RUN npm install --production
 ADD server.js /api/server.js
 
 CMD ["npm", "start"]
