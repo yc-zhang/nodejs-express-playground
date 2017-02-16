@@ -18,7 +18,7 @@ We'll introduce the other tasks like **test**, **pre-push check** later.
 
 - [x] Dockerised
 - [x] Route binding.
-- [ ] Unit test.
+- [x] Unit test.
 - [ ] ORM integration.
 - [ ] Middleware binding.
 - [ ] API doc generator.
