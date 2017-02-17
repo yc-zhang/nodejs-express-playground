@@ -1,0 +1,19 @@
+{
+  "defaultEnv": "app",
+  "app": {
+    "driver": "mysql",
+    "user": {
+      "ENV": "MYSQL_ROOT_USER"
+    },
+    "password": {
+      "ENV": "MYSQL_ROOT_PASSWORD"
+    },
+    "host": {
+      "ENV": "DB_HOST"
+    },
+    "database": {
+      "ENV": "DB_NAME"
+    },
+    "multipleStatements": true
+  }
+}

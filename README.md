@@ -19,8 +19,12 @@ We'll introduce the other tasks like **test**, **pre-push check** later.
 - [x] Dockerised
 - [x] Route binding.
 - [x] Unit test.
-- [ ] ORM integration.
+- [ ] DB migration & ORM integration.
 - [ ] Middleware binding.
 - [ ] API doc generator.
 - [ ] Authentication & Log & Throughput Limitation & Validation.
 - [ ] Consider the Ngnix as reverse proxy
+
+### Debts
+- [ ] While run app in docker-compose, we do not have a check logic to ensure db is ready.
+- [ ] Finish the process of migration in production.

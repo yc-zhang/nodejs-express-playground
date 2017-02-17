@@ -4,6 +4,8 @@
   "main": "server.js",
   "dependencies": {
     "body-parser": "~1.0.1",
+    "db-migrate": "^0.10.0-beta.20",
+    "db-migrate-mysql": "^1.1.10",
     "express": "~4.0.0",
     "pm2": "^2.4.0",
     "require-all": "~2.1.0"
@@ -16,7 +18,7 @@
   "scripts": {
     "build-image": "sh ./ci/build-image.sh",
     "publish-image": "sh ./ci/publish-image.sh",
-    "local-run": "docker-compose up -d",
+    "local-run": "npm install && docker-compose up -d",
     "test": "./node_modules/mocha/bin/mocha test/**/*test.js --reporter spec"
   }
 }
