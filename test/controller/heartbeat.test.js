@@ -8,7 +8,7 @@ describe('heartbeat controller', () => {
         let response = buildResponse();
         let request  = httpMocks.createRequest({
             method: 'GET',
-            url: '/hello',
+            url: '/heartbeat',
         });
 
         response.on('end', function() {
