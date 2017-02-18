@@ -27,4 +27,4 @@ We'll introduce the other tasks like **test**, **pre-push check** later.
 
 ### Debts
 - [ ] While run app in docker-compose, we do not have a check logic to ensure db is ready.
-- [ ] Finish the process of migration in production.
+- [x] Finish the process of migration in production.
