@@ -11,7 +11,7 @@ let apiVersion = process.env.API_VERSION || 'v1';
 
 let controllers = require('require-all')(__dirname + '/controller');
 
-Object.keys(controllers).map(key => controllers[key]).forEach(route => app.use('/' + apiVersion, route));
+Object.values(controllers).forEach(route => app.use('/' + apiVersion, route));
 
 app.listen(port);
 
