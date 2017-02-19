@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "chai": "~3.5.0",
+    "istanbul": "^0.4.5",
     "jshint": "^2.9.4",
     "mocha": "~3.2.0",
     "node-mocks-http": "~1.5.0"
@@ -21,7 +22,7 @@
     "build-image": "sh ./ci/build-image.sh",
     "publish-image": "sh ./ci/publish-image.sh",
     "local-run": "npm install && docker-compose up -d",
-    "test": "./node_modules/mocha/bin/mocha test/**/*test.js --reporter spec",
+    "test": "./node_modules/.bin/istanbul cover --report html ./node_modules/.bin/_mocha -- --recursive test",
     "jshint": "./node_modules/.bin/jshint ./*"
   }
 }

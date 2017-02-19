@@ -2,6 +2,7 @@ ci
 config
 migration
 node_modules
+coverage
 *.sh
 *.md
 Dockerfile
