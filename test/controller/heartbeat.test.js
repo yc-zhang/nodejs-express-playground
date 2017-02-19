@@ -21,5 +21,5 @@ describe('heartbeat controller', () => {
         });
 
         heartbeat.handle(request, response, done);
-    })
+    });
 });

@@ -1,0 +1,10 @@
+ci
+config
+migration
+node_modules
+*.sh
+*.md
+Dockerfile
+docker-compose.yml
+.*
+*.log
