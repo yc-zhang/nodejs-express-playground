@@ -19,10 +19,11 @@ We'll introduce the other tasks like **test**, **pre-push check** later.
 - [x] Dockerised
 - [x] Route binding.
 - [x] Unit test.
-- [ ] DB migration & ORM integration.
+- [x] DB migration & ORM integration.
+- [ ] Pagination & Validation & Error Handling
 - [ ] Middleware binding.
 - [ ] API doc generator.
-- [ ] Authentication & Log & Throughput Limitation & Validation.
+- [ ] Authentication & Log & Throughput Limitation.
 - [ ] Consider the Ngnix as reverse proxy
 
 ### Debts
